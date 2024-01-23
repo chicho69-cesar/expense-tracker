@@ -5,7 +5,7 @@ specifiers:
   '@types/react': 18.2.48
   '@types/react-dom': 18.2.18
   '@vitejs/plugin-react-swc': 3.5.0
-  autoprefixer: ^10.4.17
+  autoprefixer: 10.4.17
   date-fns: 3.3.0
   eslint: 8.55.0
   eslint-plugin-react: 7.33.2
@@ -13,13 +13,15 @@ specifiers:
   eslint-plugin-react-refresh: 0.4.5
   firebase: 10.7.2
   focus-trap-react: 10.2.3
-  postcss: ^8.4.33
+  postcss: 8.4.33
+  prop-types: 15.8.1
   react: 18.2.0
   react-day-picker: 8.10.0
   react-dom: 18.2.0
   react-helmet: 6.1.0
   react-popper: 2.3.0
-  tailwindcss: ^3.4.1
+  react-router-dom: 6.21.3
+  tailwindcss: 3.4.1
   vite: 5.0.11
   vite-plugin-svgr: 4.2.0
 
@@ -27,12 +29,14 @@ dependencies:
   '@popperjs/core': 2.11.8
   date-fns: 3.3.0
   firebase: 10.7.2
-  focus-trap-react: 10.2.3_biqbaboplfbrettd7655fr4n2y
+  focus-trap-react: 10.2.3_v2m5e27vhdewzwhryxwfaorcca
+  prop-types: 15.8.1
   react: 18.2.0
   react-day-picker: 8.10.0_mapqyjurq3czybe2cfz2o7myv4
   react-dom: 18.2.0_react@18.2.0
   react-helmet: 6.1.0_react@18.2.0
   react-popper: 2.3.0_i7i4ysnnic4ssxw6fnjnyxwzui
+  react-router-dom: 6.21.3_biqbaboplfbrettd7655fr4n2y
   vite-plugin-svgr: 4.2.0_vite@5.0.11
 
 devDependencies:
@@ -1077,6 +1081,11 @@ packages:
 
   /@protobufjs/utf8/1.1.0:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
+    dev: false
+
+  /@remix-run/router/1.14.2:
+    resolution: {integrity: sha512-ACXpdMM9hmKZww21yEqWwiLws/UPLhNKvimN8RrYSqPSvB3ov7sLvAcfvaxePeLvccTQKGdkDIhLYApZVDFuKg==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@rollup/pluginutils/5.1.0:
@@ -2273,7 +2282,7 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /focus-trap-react/10.2.3_biqbaboplfbrettd7655fr4n2y:
+  /focus-trap-react/10.2.3_v2m5e27vhdewzwhryxwfaorcca:
     resolution: {integrity: sha512-YXBpFu/hIeSu6NnmV2xlXzOYxuWkoOtar9jzgp3lOmjWLWY59C/b8DtDHEAV4SPU07Nd/t+nS/SBNGkhUBFmEw==}
     peerDependencies:
       prop-types: ^15.8.1
@@ -2281,6 +2290,7 @@ packages:
       react-dom: '>=16.3.0'
     dependencies:
       focus-trap: 7.5.4
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tabbable: 6.2.0
@@ -3232,6 +3242,29 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-fast-compare: 3.2.2
       warning: 4.0.3
+    dev: false
+
+  /react-router-dom/6.21.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-kNzubk7n4YHSrErzjLK72j0B5i969GsuCGazRl3G6j1zqZBLjuSlYBdVdkDOgzGdPIffUOc9nmgiadTEVoq91g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.14.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.21.3_react@18.2.0
+    dev: false
+
+  /react-router/6.21.3_react@18.2.0:
+    resolution: {integrity: sha512-a0H638ZXULv1OdkmiK6s6itNhoy33ywxmUFT/xtSoVyf9VnC7n7+VT4LjVzdIHSaF5TIh9ylUgxMXksHTgGrKg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.14.2
+      react: 18.2.0
     dev: false
 
   /react-side-effect/2.1.2_react@18.2.0:
