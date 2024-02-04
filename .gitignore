@@ -1,6 +1,9 @@
 # Env variables
 .env.local
 
+# Firebase
+.firebase/
+
 # Logs
 logs
 *.log
