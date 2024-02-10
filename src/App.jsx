@@ -1,9 +1,15 @@
+import Background from './components/ui/background'
+import Providers from './context/providers'
+import Router from './routers/router'
+
 export default function App() {
   return (
     <>
-      <h1 className='text-4xl mt-4 text-center font-black'>
-        Hola Mundo!!!
-      </h1>
+      <Providers>
+        <Router />
+        
+        <Background />
+      </Providers>
     </>
   )
 }
